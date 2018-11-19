@@ -2,9 +2,9 @@
 
 int search(int array[], int n, int x)
 {
-    int index;
+    for (int i = 0; i < n; i++) {
+        if (array[i] == x) return i;
+    }
 
-    // Write your code here
-
-    return index;
+    return -1;
 }

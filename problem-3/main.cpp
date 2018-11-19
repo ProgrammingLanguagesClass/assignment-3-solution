@@ -2,9 +2,11 @@
 
 int multiply(int x[], int y[], int n)
 {
-    int result;
+    int result = 0;
 
-    // Write your code here
+    for (int i = 0; i < n; i++) {
+        result += x[i] * y[i];
+    }
 
     return result;
 }

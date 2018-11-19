@@ -1,9 +1,11 @@
 #include "main.h"
 
 int addOddNumbers(int n) {
-    int sum;
+    int sum = 0;
 
-    // Write your code here
+    for (int i = 1; i <= n; i += 2) {
+        sum += i;
+    }
 
     return sum;
 }

@@ -5,9 +5,12 @@ using namespace std;
 
 float averageGrade(int grades[], int n)
 {
-    float average;
+    float average = 0;
 
-    // Write your code here
+    for (int i = 0; i < n; i++) {
+        average += grades[i];
+    }
+    average /= n;
 
     return average;
 }
